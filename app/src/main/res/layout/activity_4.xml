@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@color/purple_700"
+        android:text="Entry Nilai Mahasiswa"
+        android:textColor="@color/white"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/textNim"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="45dp"
+        android:text="NIM" />
+
+    <EditText
+        android:id="@+id/editNim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:layout_toRightOf="@id/textNim"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textNama"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textNim"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Nama Mahasiswa" />
+
+    <EditText
+        android:id="@+id/editNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editNim"
+        android:layout_toRightOf="@id/textNama"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textTgs"
+        android:layout_width="98dp"
+        android:layout_height="32dp"
+        android:layout_below="@id/textNama"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="N.Tugas" />
+
+    <EditText
+        android:id="@+id/editTgs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editNama"
+        android:layout_marginLeft="-1dp"
+        android:layout_marginTop="0dp"
+        android:layout_toRightOf="@id/textTgs"
+        android:ems="5"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/textPTgs"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textNama"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/editTgs"
+        android:text="30%" />
+
+    <EditText
+        android:id="@+id/editPTgs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editNama"
+        android:layout_toRightOf="@id/textPTgs"
+        android:ems="5"
+        android:inputType="numberDecimal" />
+    <TextView
+        android:id="@+id/textUts"
+        android:layout_width="98dp"
+        android:layout_height="32dp"
+        android:layout_below="@id/textTgs"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:text="N.UTS" />
+
+    <EditText
+        android:id="@+id/editUts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTgs"
+        android:layout_toRightOf="@id/textUts"
+        android:ems="5"
+        android:inputType="numberDecimal" />
+    <TextView
+        android:id="@+id/textPUts"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/textPTgs"
+        android:layout_toRightOf="@id/editUts"
+        android:text="35%" />
+
+    <EditText
+        android:id="@+id/editPUts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editPTgs"
+        android:layout_toRightOf="@id/textPUts"
+        android:ems="5"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/textUas"
+        android:layout_width="101dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textUts"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:text="N. UAS" />
+
+    <EditText
+        android:id="@+id/editUas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editUts"
+        android:layout_toRightOf="@id/textUas"
+        android:ems="5"
+        android:inputType="numberDecimal" />
+    <TextView
+        android:id="@+id/textPUas"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/textPUts"
+        android:layout_toRightOf="@id/editUas"
+        android:text="35%" />
+
+    <EditText
+        android:id="@+id/editPUas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editPUts"
+        android:layout_toRightOf="@id/textPUas"
+        android:ems="5"
+        android:inputType="numberDecimal" />
+    <TextView
+        android:id="@+id/textAkhir"
+        android:layout_width="101dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textUas"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:text="N. Akhir" />
+
+    <EditText
+        android:id="@+id/editAkhir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editUas"
+        android:layout_toRightOf="@id/textAkhir"
+        android:ems="5"
+        android:enabled="false"
+        android:inputType="numberDecimal" />
+    <TextView
+        android:id="@+id/textHuruf"
+        android:layout_width="101dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textAkhir"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:text="N. Huruf" />
+
+    <EditText
+        android:id="@+id/editHuruf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editAkhir"
+        android:layout_toRightOf="@id/textHuruf"
+        android:ems="5"
+        android:enabled="false"
+        android:inputType="textPersonName" />
+    <TextView
+        android:id="@+id/textPredikat"
+        android:layout_width="101dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textHuruf"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:text="Predikat" />
+
+    <EditText
+        android:id="@+id/editPredikat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editHuruf"
+        android:layout_toRightOf="@id/textPredikat"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/buttonkirim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editPredikat"
+        android:layout_toRightOf="@id/textPredikat"
+        android:onClick="kirimkan"
+        android:text="kirim" />
+
+    <Button
+        android:id="@+id/buttonKeluar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editPredikat"
+        android:layout_toRightOf="@id/buttonkirim"
+        android:onClick="keluar"
+        android:text="Keluar" />
+
+</RelativeLayout>
