@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:text="Egy Nando Wijaya"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:text="A11.2021.13216"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_persegi"
+        android:onClick="Persegi"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Persegi"
+        android:textSize="17sp"
+        android:backgroundTint="@color/design_default_color_secondary"
+        android:layout_gravity="center" />
+
+    <Button
+        android:id="@+id/btn_segitiga"
+        android:onClick="Segitiga"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Segitiga"
+        android:textSize="17sp"
+        android:backgroundTint="@color/design_default_color_secondary"
+        android:layout_gravity="center" />
+
+    <Button
+        android:id="@+id/btn_lingkaran"
+        android:onClick="Lingkaran"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Lingkaran"
+        android:textSize="17sp"
+        android:backgroundTint="@color/design_default_color_secondary"
+        android:layout_gravity="center" />
+
+
+</LinearLayout>
